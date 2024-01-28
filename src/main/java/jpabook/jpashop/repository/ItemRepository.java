@@ -16,7 +16,7 @@ public class ItemRepository {
         if (item.getId() == null) { //id가 없으면 완전히 새로 생성한 객체
             em.persist(item);
         } else { //이미 DB에 동록된걸 가져온것
-            em.merge(item); //Update와 유사
+            em.merge(item); //Update와 유사 쓸일이 거의 없음
         }
     }
 
