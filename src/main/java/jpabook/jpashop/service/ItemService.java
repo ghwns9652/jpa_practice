@@ -11,13 +11,21 @@ import java.util.List;
 @Service
 @Transactional(readOnly = true)
 @RequiredArgsConstructor
-public class ItemService { //itemRepository에 단순 위임만 하는 클래스
-                            // 단순 위임만 하기 때문에 controller에서 repository 바로 호출하는것도 나쁘지 않음
+public class ItemService {
+
     private final ItemRepository itemRepository;
 
     @Transactional
     public void saveItem(Item item) {
         itemRepository.save(item);
+    }
+
+    @Transactional
+    public void updateItem(Long itemId, String name, int price, int stockQuantity) {
+        Item item = itemRepository.findOne(itemId);
+        item.setName(name);
+        item.setPrice(price);
+        item.setStockQuantity(stockQuantity);
     }
 
     public List<Item> findItems() {
@@ -27,4 +35,5 @@ public class ItemService { //itemRepository에 단순 위임만 하는 클래스
     public Item findOne(Long itemId) {
         return itemRepository.findOne(itemId);
     }
+
 }
