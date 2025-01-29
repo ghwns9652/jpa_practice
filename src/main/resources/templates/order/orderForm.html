@@ -19,9 +19,9 @@
         </div>
 
         <div class="form-group">
-            <label for="item">상품명</label>
+            <label for="item">도서명</label>
             <select name="itemId" id="item" class="form-control">
-                <option value="">상품선택</option>
+                <option value="">도서선택</option>
                 <option th:each="item : ${items}"
                         th:value="${item.id}"
                         th:text="${item.name}" />

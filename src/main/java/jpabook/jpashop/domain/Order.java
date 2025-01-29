@@ -77,7 +77,7 @@ public class Order {
      */
     public void cancel() {
         if(delivery.getStatus() == DeliveryStatus.COMP) {
-            throw new IllegalStateException("이미 배송완료된 상품은 취소가 불가능합니다.");
+            throw new IllegalStateException("이미 배송완료된 도서는 취소가 불가능합니다.");
         }
 
         this.setStatus(OrderStatus.CANCEL);
@@ -89,7 +89,7 @@ public class Order {
     //==조회 로직==//
 
     /**
-     * 주문상품 전체 가격 조회
+     * 주문도서 전체 가격 조회
      */
     public int getTotalPrice() {
         int totalPrice = 0;
