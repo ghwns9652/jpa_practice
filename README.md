@@ -1,5 +1,5 @@
 # 도서 쇼핑몰 프로젝트
----
+
 ## 목차
 
 1. 개요
@@ -7,8 +7,6 @@
 3. DB 설계
 4. API 설계
 5. 마치며
-
----
 
 ## 1. 개요
 
@@ -23,8 +21,6 @@
 - 데이터베이스 : MySQL
 - 형상관리 : Git
 - 설명 : CRUD 기능을 구현하기 위한 간단한 인터넷 서점 웹사이트
-
----
 
 ## 2. 실행화면
 
@@ -82,8 +78,6 @@
     
 </details>
 
----
-
 ## 3. DB 설계
 
 ![jpashop2.png](Images/jpashop2.png)
@@ -98,8 +92,6 @@
 
 ![ItemDB.png](Images/table_item.png)
 
----
-
 ## 4. API 설계
 
 ![MemberAPI.png](Images/apis_member.png)
@@ -107,8 +99,6 @@
 ![ItemAPI.png](Images/apis_item.png)
 
 ![OrderAPI.png](Images/apis_order.png)
-
----
 
 ## 5. 마치며
 
