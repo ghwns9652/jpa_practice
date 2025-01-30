@@ -42,7 +42,7 @@ public class MemberController {
         member.setAddress(address);
 
         memberService.join(member);
-        return "redirect:/";
+        return "redirect:/members";
     }
 
     @GetMapping("/members")
