@@ -100,6 +100,8 @@
 
 ![OrderAPI.png](Images/apis_order.png)
 
+![RestAPI.png](Images/apis_rest.png)
+
 ## 5. 마치며
 
 ### 보완할 점
