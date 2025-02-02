@@ -106,8 +106,6 @@
 
 ### 보완할 점
 
-회원을 등록하는 기능만 있고 회원가입 & 로그인 기능이 없다. 
-
-동적쿼리를 JPQL로 구현하였는데 Querydsl로 변경하면 코드 가독성 측면에서 더 좋을 것이라고 생각한다. Spring Data JPA도 Member 관련 Repository에만 적용이 되었는데 Item, Order Repository에도 적용할 예정이다.
-
+회원을 등록하는 기능만 있기 때문에 실제 쇼핑몰과 유사하게 회원가입 & 로그인 기능을 추가할 계획이다. 
+그리고 JPQL 동적쿼리를 Querydsl로 변경하여 코드 가독성을 높일 예정이며 Spring Data JPA도 Member 관련 Repository에만 적용이 되었는데 Item, Order Repository에도 적용할 예정이다.
 도서마다 상세 페이지와 댓글 기능을 만들어서 실제 도서 쇼핑몰에 가깝게 고도화 할 계획이다.
